@@ -11,6 +11,7 @@ import { CookieService } from 'ngx-cookie-service';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PollsComponent } from './components/polls/polls.component';
+import { RemoveEmailPipe } from './remove-email.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { PollsComponent } from './components/polls/polls.component';
     LoginComponent,
     HomeComponent,
     NavbarComponent,
-    PollsComponent
+    PollsComponent,
+    RemoveEmailPipe
   ],
   imports: [
     BrowserModule,
