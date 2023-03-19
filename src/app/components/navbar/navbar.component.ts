@@ -13,6 +13,7 @@ export class NavbarComponent {
   exit(){
     this.cookieService.delete('TOKEN');
     this.cookieService.delete('EMAIL');
+    localStorage.clear();
     window.location.reload();
   }
 

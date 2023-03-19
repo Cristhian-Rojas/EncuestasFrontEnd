@@ -1,7 +1,6 @@
 import { CookieService } from 'ngx-cookie-service';
 import { Injectable } from '@angular/core';
-import {
-  HttpRequest,
+import {HttpRequest,
   HttpHandler,
   HttpEvent,
   HttpInterceptor
@@ -16,7 +15,7 @@ export class JwtInterceptorInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     const token: string = this.cookieService.get('TOKEN');
-    const correo: string = this.cookieService.get('EMAIL');
+    const correo: any = localStorage.getItem('email');
 
     let req = request;
 

@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit{
 
   getid(){
     this.homeService.getId(this.gmail).subscribe(
-      y => { this.idUser = y ;
+      y => { this.idUser = y ; console.log(y);
         this.objForm = {
         user: {id: y},
         comments: "",
