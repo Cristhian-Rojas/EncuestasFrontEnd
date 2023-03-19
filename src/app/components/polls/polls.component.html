@@ -14,24 +14,24 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
+
                                     <th>Numero de documento</th>
                                     <th>Email</th>
                                     <th>Comentarios</th>
                                     <th>Marca Favorita</th>
                                     <th>Usuario</th>
-                                    <th>Correo</th>
+                                    <th>Fecha de creacion</th>
                                 </tr>
                             </thead>
                             <tbody>
                                   <tr *ngFor="let aux of polls">
-                                     <td>{{ aux.id }}</td>
+
                                      <td>{{ aux.nmdocumento }}</td>
                                      <td>{{ aux.emailpoll }}</td>
                                      <td>{{ aux.comments }}</td>
                                      <td>{{ aux.favoritebrand }}</td>
                                      <td>{{ aux.user?.person?.firstName}}</td>
-                                     <td>{{ aux.datetime}}</td>
+                                     <td>{{ aux.datetime | date: 'short'}}</td>
                                      <td><button  (click)="elimina(aux)" type="button" style="width: 90px"
                                       class="btn btn-danger btn-sm"  >Eliminar</button></td>
                                   </tr>
