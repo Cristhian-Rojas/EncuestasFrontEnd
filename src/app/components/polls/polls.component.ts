@@ -1,3 +1,4 @@
+
 import { Polls } from './../../models/polls.model';
 import { PollServiecService } from './../../services/poll-service.service';
 import { Component } from '@angular/core';

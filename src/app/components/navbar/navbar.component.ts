@@ -10,6 +10,8 @@ export class NavbarComponent {
 
   constructor(private cookieService: CookieService) { }
 
+  user?: any = localStorage.getItem('email');
+
   exit(){
     this.cookieService.delete('TOKEN');
     this.cookieService.delete('EMAIL');

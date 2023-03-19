@@ -27,6 +27,7 @@ export class LoginComponent {
         this.cookieService.set('TOKEN', data.token);
         //this.cookieService.set('EMAIL', data.email);
         localStorage.setItem('email', data.email);
+
         this.isLogged = true;
         this.router.navigate(['home']);
       }
