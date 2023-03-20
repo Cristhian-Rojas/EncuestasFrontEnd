@@ -1,4 +1,4 @@
 export class Person{
   firstName?: string;
-  lastName?: string;
+  lastname?: string;
 }

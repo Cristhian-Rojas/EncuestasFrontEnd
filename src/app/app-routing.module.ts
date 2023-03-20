@@ -1,3 +1,4 @@
+import { RegisterComponent } from './components/register/register.component';
 import { PollsComponent } from './components/polls/polls.component';
 import { UserGuardGuard } from './guard/user-guard.guard';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -7,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'polls', component: PollsComponent, canActivate: [UserGuardGuard]},
   {path: 'home', component: HomeComponent, canActivate: [UserGuardGuard]},

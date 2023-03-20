@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PollsComponent } from './components/polls/polls.component';
 import { RemoveEmailPipe } from './remove-email.pipe';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { RemoveEmailPipe } from './remove-email.pipe';
     HomeComponent,
     NavbarComponent,
     PollsComponent,
-    RemoveEmailPipe
+    RemoveEmailPipe,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
